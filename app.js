@@ -13,7 +13,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded());
-app.use(cors({ origin: ["http://localhost:3000"], credentials: true }));
+app.use(cors({ origin: ["http://184.72.69.144/AppAttic"], credentials: true }));
 
 app.use("/api",imageGenerationRouter)
 
