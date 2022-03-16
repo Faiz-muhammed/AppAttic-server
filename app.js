@@ -13,7 +13,8 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded());
-app.use(cors({ origin: ["http://betak.ml"], credentials: true }));
+// app.use(cors({ origin: ["http://betak.ml"], credentials: true }));
+app.use(cors())
 
 app.use("/api",imageGenerationRouter)
 
